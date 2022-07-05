@@ -1,0 +1,226 @@
+body {
+  overflow-x: hidden;
+}
+
+.park {
+  margin-left: 1rem;
+  font-weight: 100;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: .5rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav {
+  padding: 0;
+}
+
+.about-nav {
+  width: 30%;
+  margin-left: 4rem;
+}
+
+
+/* .header-image {
+  width: 90%;
+  margin-left: auto;
+} */
+
+/* .header-image{
+  width: 90%;
+} */
+.header-text {
+  z-index: 100;
+}
+
+.bg-dark {
+  background: #000000;
+  border-radius: 5px;
+}
+
+.btn-dark {
+  background: #000000;
+  border-radius: 5px;
+}
+
+.bg-primary,
+.btn-primary {
+  background: linear-gradient(180deg, #06B3FB 0%, #3D4AFF 162.5%);
+  border-radius: 5px;
+}
+
+.bg-light {
+  background-color: #F6F6F6;
+}
+
+.blue-circles {
+  left: -12rem;
+  top: 5rem;
+  opacity: .4;
+  z-index: 1;
+}
+
+.gray-circle {
+  left: -12rem;
+  /* top: 5rem; */
+  bottom: -5rem;
+  opacity: .1;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 25px;
+
+  /* background-color: #2196F3; */
+  /* padding: 10px; */
+}
+
+.cards {
+  background: rgba(210, 210, 210, 0.1);
+  backdrop-filter: blur(7px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.cards>h2 {
+  width: 75%;
+}
+
+.hero-section {
+  width: 80%;
+  margin: auto;
+}
+
+.hero-img {
+  height: 455px;
+}
+
+.table-circles {
+  opacity: 0.4;
+  bottom: -5rem;
+  right: -50rem;
+}
+
+#pricing {
+  z-index: 100;
+}
+
+.real-estate {
+  background: linear-gradient(180deg, rgba(55, 154, 238, 0.37) 0%, rgba(255, 255, 255, 0) 100%);
+  /* opacity: 0.2; */
+}
+
+/* .real-estate-container {
+  width: 77%;
+  margin: auto;
+} */
+.item-2 {
+  background: linear-gradient(180deg, #40C6CC 0%, #006339 100%);
+  border-radius: 10px;
+
+}
+
+.item-1 {
+  background: linear-gradient(180deg, #FF7676 0%, #850088 100%);
+  border-radius: 10px;
+}
+
+.item-3 {
+  background: linear-gradient(173.74deg, #38C5FF 4.94%, #3D4AFF 95.15%);
+  border-radius: 10px;
+}
+
+.blue-container {
+  width: 40%;
+}
+
+.item-3 h2 {
+  text-align: justify;
+}
+
+li {
+  text-decoration: none;
+}
+
+.monthly-price {
+  color: #6c757d;
+}
+
+
+
+.yearly-price {
+  margin-left: 0;
+  color: #ced4da
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background: linear-gradient(180deg, #06B3FB 0%, #3D4AFF 162.5%);
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.button-section {
+  width: 40%;
+}
+
+.form-switch1 {
+  margin-right: 5rem;
+}
