@@ -320,3 +320,11 @@ input:checked+.slider:before {
   right: -15rem;
   top: -3rem;
 }
+
+.bg-dark {
+  background-color: #101010;
+}
+
+.form-control.dark {
+  background-color: #242424;
+}

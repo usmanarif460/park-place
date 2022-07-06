@@ -8820,8 +8820,7 @@ last section
 }
 
 .bg-dark {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #101010;
 }
 
 .bg-black {
@@ -12551,7 +12550,7 @@ footer a:focus {
 }
 
 .masthead {
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa; */
   padding-top: 9.5rem;
   padding-bottom: 5rem;
 }
