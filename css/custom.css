@@ -21,7 +21,7 @@ body {
   /* or 115% */
   letter-spacing: -0.03em !important;
   width: 703px !important;
-  color: #000000 !important;
+
 
 }
 
@@ -168,17 +168,76 @@ nav {
 }
 
 .blue-circles {
+  left: -9rem;
+  top: 0rem;
+  opacity: .2;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.blue-circles-2 {
+
+  position: absolute;
+  bottom: -8rem;
+  right: 8rem;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  z-index: -1000;
+}
+
+.blue-circles-3 {
+  position: absolute;
+  left: -20rem;
+  top: 20rem;
+  z-index: -1000;
+  opacity: 0.1;
+}
+
+.gray-circles-2 {
+  position: absolute;
+  top: 15rem;
+  right: -10rem;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  z-index: -1000;
+}
+
+.blue-circles-2>img {
+  width: 349px;
+  height: 349px;
+  opacity: .2;
+}
+
+.blue-circles>img {
+  height: 389px;
+  width: 389px;
   overflow: unset;
-  left: -11rem;
-  top: 5rem;
-  opacity: .3;
+
+}
+
+.work-text {
+  color: rgba(0, 0, 0, 0.5) !important;
+
+}
+
+.text {
+  color: #000000 !important;
+  font-size: 28px !important;
+}
+
+.paragraph-text {
+  line-height: 28px !important;
+  font-size: 16px !important;
 }
 
 .gray-circle {
+  transform: matrix(1, 0, 0, -1, 0, 0);
   left: -12rem;
   /* top: 5rem; */
   bottom: -5rem;
   opacity: .1;
+}
+
+.month-text {
+  font-size: 17px;
+  font-weight: 600;
 }
 
 .grid-container {
@@ -195,6 +254,7 @@ nav {
   backdrop-filter: blur(7px);
   border-radius: 10px;
   padding: 20px;
+  z-index: 2000;
 }
 
 .cards>h2 {
@@ -206,18 +266,17 @@ nav {
   margin: auto;
 }
 
-.hero-img {
+.hero-img>img {
   height: 455px;
+  border-radius: 10px;
 }
 
 .table-circles {
-  opacity: 0.4;
+  z-index: -1000;
+  opacity: 0.2;
   bottom: -5rem;
   right: -50rem;
-}
-
-#pricing {
-  z-index: 100;
+  transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
 .real-estate {
@@ -338,6 +397,8 @@ input:checked+.slider:before {
 
 .h2 {
   color: #1696FD;
+  width: 34px;
+  height: 34px;
 }
 
 .real-estate-dark {
@@ -355,13 +416,19 @@ input:checked+.slider:before {
 
 .monty {
   font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
 }
 
 .mobile-svg {
+
   width: 75%;
   position: absolute;
   right: -12rem;
   top: -3rem;
+}
+
+.mobile-svg>img {
+  z-index: 1000;
 }
 
 .lh-1 {

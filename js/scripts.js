@@ -36,6 +36,7 @@ const sun = document.querySelector('.bi-sun');
 const label = document.querySelector('.label')
 const toggle=document.querySelector('.toggle')
 const logo = document.querySelectorAll('.logo')
+const heroImg = document.querySelectorAll('.hero-img');
 chk.addEventListener('change', ($event) => {
     const isChecked = document.getElementById('chk').checked
     if (isChecked) {
@@ -43,11 +44,13 @@ chk.addEventListener('change', ($event) => {
         logo.forEach(item => {
             item.setAttribute('src', "assets/logo-light.svg")
         })
+        heroImg.forEach(el=>el.classList.add('opacity-75'))
     } else {
         mobileSvg.setAttribute('src', "assets/mobile.svg")
         logo.forEach(item => {
             item.setAttribute('src', "assets/logo-dark.svg")
         })
+        heroImg.forEach(el=>el.classList.remove('opacity-75'))
     }
     if (isChecked) {
         label.classList.add('label-color');
