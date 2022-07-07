@@ -37,6 +37,7 @@ const label = document.querySelector('.label')
 const toggle=document.querySelector('.toggle')
 const logo = document.querySelectorAll('.logo')
 const heroImg = document.querySelectorAll('.hero-img');
+const border = document.querySelector('#footer');
 chk.addEventListener('change', ($event) => {
     const isChecked = document.getElementById('chk').checked
     if (isChecked) {
@@ -44,13 +45,15 @@ chk.addEventListener('change', ($event) => {
         logo.forEach(item => {
             item.setAttribute('src', "assets/logo-light.svg")
         })
-        heroImg.forEach(el=>el.classList.add('opacity-75'))
+        heroImg.forEach(el => el.classList.add('opacity-75'))
+        border.classList.add('border-light');
     } else {
         mobileSvg.setAttribute('src', "assets/mobile.svg")
         logo.forEach(item => {
             item.setAttribute('src', "assets/logo-dark.svg")
         })
         heroImg.forEach(el=>el.classList.remove('opacity-75'))
+    border.classList.add('border-dark')
     }
     if (isChecked) {
         label.classList.add('label-color');
@@ -65,7 +68,7 @@ chk.addEventListener('change', ($event) => {
         sun.classList.remove('d-none')
         moon.classList.add('d-none')
     }
-
+    
     // const masthead = document.getElementById('masthead')
     // if (masthead.classList.contains('bg-white')) {
     //     masthead.classList.remove('bg-white');
