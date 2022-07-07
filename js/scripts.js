@@ -31,13 +31,36 @@ const blueButton = document.getElementById('get-started');
 const darkText = document.querySelectorAll('.text-dark');
 const realEstate = document.getElementById('real-estate');
 const mobileSvg = document.getElementById('mobile');
-
+const moon = document.querySelector('.bi-moon');
+const sun = document.querySelector('.bi-sun');
+const label = document.querySelector('.label')
+const toggle=document.querySelector('.toggle')
+const logo = document.querySelectorAll('.logo')
 chk.addEventListener('change', ($event) => {
     const isChecked = document.getElementById('chk').checked
     if (isChecked) {
         mobileSvg.setAttribute('src', "assets/mobile-dark.svg")
+        logo.forEach(item => {
+            item.setAttribute('src', "assets/logo-light.svg")
+        })
     } else {
         mobileSvg.setAttribute('src', "assets/mobile.svg")
+        logo.forEach(item => {
+            item.setAttribute('src', "assets/logo-dark.svg")
+        })
+    }
+    if (isChecked) {
+        label.classList.add('label-color');
+        label.classList.remove('color-before');
+        moon.classList.remove('d-none');
+        sun.classList.add('d-none');
+    }
+    else {
+        console.log('no hello');
+        label.classList.add('color-before')
+        label.classList.remove('label-color')
+        sun.classList.remove('d-none')
+        moon.classList.add('d-none')
     }
 
     // const masthead = document.getElementById('masthead')
