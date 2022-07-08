@@ -13,6 +13,10 @@ body {
   overflow-x: hidden;
 }
 
+#navitems {
+  margin-left: 2rem !important;
+}
+
 .display-3 {
   font-family: 'Raleway' !important;
   font-style: normal !important;
@@ -480,6 +484,7 @@ input:checked+.slider:before {
 }
 
 @media (max-width:640px) {
+
   .mobile-svg {
     width: 100%;
     position: static;
@@ -602,5 +607,216 @@ input:checked+.slider:before {
   #footer-item {
     padding: 30px;
     align-items: center !important;
+  }
+
+  #navItems {
+    /* display: none; */
+    flex-direction: column !important;
+    padding: 10px 20px !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  #park {
+    margin-left: .5rem;
+    font-size: normal !important;
+    font-weight: 100;
+    text-align: center;
+    vertical-align: middle;
+    /* letter-spacing: .5rem; */
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .logo {
+    margin: .5rem;
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  #navList {
+    flex-direction: column !important;
+  }
+
+  #navListItems {
+    flex-direction: column !important;
+    width: 100% !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 25px;
+  }
+
+  #startButton {
+    padding: 8px 16px !important;
+  }
+}
+
+@media (max-width:768px) {
+  .mobile-svg {
+    width: 100%;
+    position: static;
+  }
+
+  .display-2 {
+    line-height: 0 !important;
+    font-size: 30px !important;
+    margin-bottom: 0 !important;
+  }
+
+  #header-paragraph {
+    width: 100% !important;
+  }
+
+  #cards {
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  #cards>p {
+    text-align: center;
+  }
+
+  #cards>h2 {
+    font-size: larger;
+    text-align: center;
+  }
+
+  #features h1 {
+    width: 100% !important;
+    line-height: 25px !important;
+    font-size: larger !important;
+    text-align: center !important;
+  }
+
+  #features p {
+    width: 100% !important;
+    font-size: 16px !important;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .hero-section>h1 {
+    width: 100% !important;
+    line-height: 25px !important;
+    font-size: larger !important;
+    text-align: center !important;
+  }
+
+  .hero-section p {
+    width: 100% !important;
+    font-size: 16px !important;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  #pricing {
+    overflow-x: visible;
+  }
+
+  #fastest>h3 {
+    width: 100% !important;
+    line-height: 25px !important;
+    font-size: larger !important;
+    text-align: center !important;
+  }
+
+  #third-container {
+    flex-direction: column !important;
+  }
+
+  #third-container h2 {
+    width: 100% !important;
+    line-height: 25px !important;
+    font-size: larger !important;
+    text-align: center !important;
+  }
+
+  #blue-container {
+    width: 100%;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px;
+  }
+
+  #blue-container p {
+    width: 100% !important;
+    font-size: 16px !important;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  #contact-form h1 {
+    width: 100% !important;
+    line-height: 25px !important;
+    font-size: larger !important;
+    text-align: center !important;
+  }
+
+  .form-control {
+    width: 100% !important;
+    height: 100% !important;
+    margin: auto;
+  }
+
+  .send-button {
+
+    padding: 10px 35px !important;
+    font-family: 'Raleway' !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF !important;
+  }
+
+  #footer-item {
+    padding: 30px;
+    align-items: center !important;
+  }
+
+  #navItems {
+    /* display: none; */
+    width: 100% !important;
+    flex-direction: column !important;
+    padding: 10px 20px !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+
+
+  #park {
+    margin-left: .5rem;
+    font-size: normal !important;
+    font-weight: 100;
+    text-align: center;
+    vertical-align: middle;
+    /* letter-spacing: .5rem; */
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .logo {
+    margin: .5rem;
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  #navList {
+    flex-direction: column !important;
+  }
+
+  #navListItems {
+    flex-direction: column !important;
+    width: 100% !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 25px;
+  }
+
+  #startButton {
+    padding: 8px 16px !important;
   }
 }
