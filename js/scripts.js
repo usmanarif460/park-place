@@ -38,6 +38,7 @@ const toggle=document.querySelector('.toggle')
 const logo = document.querySelectorAll('.logo')
 const heroImg = document.querySelectorAll('.hero-img');
 const border = document.querySelector('#footer');
+const navbarToggler=document.querySelector('.navbar-toggler')
 chk.addEventListener('change', ($event) => {
     const isChecked = document.getElementById('chk').checked
     if (isChecked) {
@@ -47,7 +48,10 @@ chk.addEventListener('change', ($event) => {
         })
         heroImg.forEach(el => el.classList.add('opacity-75'))
         border.classList.add('border-light');
+        navbarToggler.classList.add('text-white');
     } else {
+        navbarToggler.classList.add('text-dark')
+        navbarToggler.classList.remove('text-white')
         mobileSvg.setAttribute('src', "assets/mobile.svg")
         logo.forEach(item => {
             item.setAttribute('src', "assets/logo-dark.svg")
