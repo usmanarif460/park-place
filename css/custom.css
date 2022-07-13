@@ -421,7 +421,7 @@ input:checked+.slider:before {
 
   width: 75%;
   position: absolute;
-  right: -12rem;
+  right: -4rem;
   top: -3rem;
 }
 
@@ -819,4 +819,9 @@ input:checked+.slider:before {
   #startButton {
     padding: 8px 16px !important;
   }
+}
+
+.one-quarter {
+  margin-left: auto;
+  margin-right: 2rem;
 }
