@@ -663,6 +663,32 @@ input:checked+.slider:before {
   }
 }
 
+#property-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 24px;
+  gap: 10px;
+  left: 1rem;
+  bottom: 1rem;
+  border-radius: 5px;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+
+}
+
+/* #hero-container {
+  background: linear-gradient(179.95deg, #000000 0.04%, rgba(0, 0, 0, 0) 157.62%);
+  z-index: 1000;
+}
+
+#hero-img {
+  opacity: .7;
+  border-radius: 10px;
+
+} */
+
 @media (max-width:768px) {
   body {
     overflow-x: hidden;
