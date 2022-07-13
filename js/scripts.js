@@ -26,6 +26,7 @@ window.addEventListener('DOMContentLoaded', event => {
 // "assets/mobile-dark.svg"
 const chk = document.getElementById('chk');
 const bgLight = document.querySelectorAll('.bg-light')
+const bgDark = document.querySelectorAll('.bg-dark');
 const inputs = document.querySelectorAll('.form-control');
 const blueButton = document.getElementById('get-started');
 const darkText = document.querySelectorAll('.text-dark');
@@ -38,7 +39,8 @@ const toggle=document.querySelector('.toggle')
 const logo = document.querySelectorAll('.logo')
 const heroImg = document.querySelectorAll('.hero-img');
 const border = document.querySelector('#footer');
-const navbarToggler=document.querySelector('.navbar-toggler')
+const navbarToggler = document.querySelector('.navbar-toggler')
+const borderColor = document.querySelectorAll('.border-gray');
 chk.addEventListener('change', ($event) => {
     const isChecked = document.getElementById('chk').checked
     if (isChecked) {
@@ -49,6 +51,10 @@ chk.addEventListener('change', ($event) => {
         heroImg.forEach(el => el.classList.add('opacity-75'))
         border.classList.add('border-light');
         navbarToggler.classList.add('text-white');
+        borderColor.forEach(el => {
+            el.classList.remove('border-gray')
+        el.classList.add('border-custom')}
+        );
     } else {
         navbarToggler.classList.add('text-dark')
         navbarToggler.classList.remove('text-white')
@@ -64,6 +70,7 @@ chk.addEventListener('change', ($event) => {
         label.classList.remove('color-before');
         moon.classList.remove('d-none');
         sun.classList.add('d-none');
+        
     }
     else {
         console.log('no hello');
@@ -87,18 +94,18 @@ chk.addEventListener('change', ($event) => {
     bgLight.forEach(el => {
         if (el.classList.contains('bg-light')) {
             el.classList.remove('bg-light');
-            el.classList.add("bg-dark")
+            el.classList.add("bg-gray-100")
             el.classList.add('text-white')
-        } else if (el.classList.contains('bg-gray-50')) {
+        } else if (el.classList.contains('bg-gray-100')) {
             el.classList.add('bg-light');
-            el.classList.remove("bg-gray-50")
+            el.classList.remove("bg-gray-100")
             el.classList.remove('text-white')
         }
     })
-    if (blueButton.classList.contains('bg-primary')) {
+    if (isChecked) {
         blueButton.classList.remove('bg-primary');
         blueButton.classList.add('bg-gray-100');
-    } else if (blueButton.classList.contains('bg-gray-100')) {
+    } else {
         blueButton.classList.add('bg-primary');
         blueButton.classList.remove('bg-gray-100');
 
@@ -129,12 +136,13 @@ chk.addEventListener('change', ($event) => {
         realEstate.classList.add('real-estate')
     }
     //    console.log(bgLight);
-    if (document.body.classList.contains('bg-white')) {
+    if (isChecked) {
         document.body.classList.add('bg-dark');
         document.body.classList.remove('bg-white')
-    } else if (document.body.classList.contains('bg-dark')) {
+    } else {
+        document.body.classList.remove('bg-dark');
         document.body.classList.add('bg-white');
-        document.body.classList.remove('bg-dark')
+        
     }
 
 
