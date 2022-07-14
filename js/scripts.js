@@ -42,7 +42,6 @@ const border = document.querySelector('#footer');
 const navbarToggler = document.querySelector('.navbar-toggler')
 const borderColor = document.querySelectorAll('.border-gray');
 const bgBlack = document.querySelector('.bg-black');
-const overLay = document.querySelector('#hero-container');
 
 chk.addEventListener('change', ($event) => {
     const isChecked = document.getElementById('chk').checked
@@ -155,14 +154,17 @@ chk.addEventListener('change', ($event) => {
 
 });
 // overLay on hover
-const button = document.querySelector("#property-button");
-const spanOverlay=document.querySelector('#overlay')
-overLay.addEventListener('mouseenter', () => {
-    overLay.classList.add('overlay-container');
-    button.classList.remove('d-none');
-    spanOverlay.classList.add('overlay')
+// const overLay = document.querySelectorAll('#hero-container');
+// const button = document.querySelectorAll("#property-button");
+// const spanOverlay=document.querySelectorAll('#overlay')
+// const overlayFunction=() => {
+//     overLay.forEach(el=>el.classList.add('overlay-container'));
+//     button.forEach(el=>el.classList.remove('d-none'))
+//     spanOverlay.forEach(el=>el.classList.add('overlay'))
 
-})
-overLay.addEventListener('mouseleave', () => {
-    button.classList.add('d-none')
-})
+// }
+
+// overLay.forEach(el =>el.addEventListener('mouseenter',overlayFunction ))
+// overLay.forEach(el=>el.addEventListener('mouseleave', () => {
+//     button.forEach(el => el.classList.add('d-none'))
+// }))

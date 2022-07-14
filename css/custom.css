@@ -283,23 +283,14 @@ nav {
   background-color: #006339;
 }
 
-.overlay-container {
-  position: relative;
-  width: 50%;
-
-
-}
-
-
-
-.overlay {
+#overlay {
   position: absolute;
-  top: 1px;
+  top: 0;
   bottom: 0;
-  left: 8px;
+  left: 5px;
   right: 0;
   height: 100%;
-  width: 532px;
+  width: calc(100% - 12px);
   opacity: 0;
   border-radius: 10px;
   transition: .5s ease;
@@ -307,21 +298,21 @@ nav {
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
-.overlay-container:hover .overlay {
+
+.overlay-container:hover #overlay {
   opacity: 1;
   cursor: pointer;
 }
 
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+.overlay-container:hover #property-button {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.overlay-container {
+  position: relative !important;
 }
 
 .table-circles {
@@ -687,7 +678,7 @@ input:checked+.slider:before {
   #navItems {
     /* display: none; */
     flex-direction: column !important;
-    padding: 10px 20px !important;
+
     align-items: center !important;
     justify-content: center !important;
   }
@@ -728,12 +719,15 @@ input:checked+.slider:before {
 }
 
 #property-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 24px !important;
-  gap: 10px;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 19px !important;
+  /* identical to box height */
+  letter-spacing: -0.03em !important;
+  color: #FFFFFF;
+  padding: 13px 24px !important;
+  gap: 8px;
   left: 2rem;
   bottom: 2rem;
   border-radius: 5px;
@@ -741,6 +735,8 @@ input:checked+.slider:before {
   background: rgba(255, 255, 255, 0.15);
 
 }
+
+
 
 /* #hero-container {
   background: linear-gradient(179.95deg, #000000 0.04%, rgba(0, 0, 0, 0) 157.62%);
@@ -752,7 +748,7 @@ input:checked+.slider:before {
   border-radius: 10px;
 
 } */
-footer {
+#footer {
   border: 1px solid #EAEAEA !important;
 
 }
