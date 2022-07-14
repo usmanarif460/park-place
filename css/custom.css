@@ -274,6 +274,56 @@ nav {
   border-radius: 10px;
 }
 
+.hero-img-1 {
+  opacity: 0;
+}
+
+.hero-img-1:hover {
+  opacity: 1;
+  background-color: #006339;
+}
+
+.overlay-container {
+  position: relative;
+  width: 50%;
+
+
+}
+
+
+
+.overlay {
+  position: absolute;
+  top: 1px;
+  bottom: 0;
+  left: 8px;
+  right: 0;
+  height: 100%;
+  width: 532px;
+  opacity: 0;
+  border-radius: 10px;
+  transition: .5s ease;
+  background: linear-gradient(179.95deg, #000000 0.04%, rgba(0, 0, 0, 0) 157.62%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.overlay-container:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .table-circles {
   z-index: -1000;
   opacity: 0.2;
@@ -320,21 +370,34 @@ li {
 }
 
 .monthly-price {
-  color: #6c757d;
+  font-family: 'Raleway' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 21px !important;
+
+  color: rgba(255, 255, 255, 0.6) !important;
+
+
 }
 
 
 
 .yearly-price {
-  margin-left: 0;
-  color: #ced4da
+  font-family: 'Raleway' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 21px !important;
+  color: #FFFFFF !important;
+
 }
 
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 55px;
+  height: 30px;
 }
 
 .switch input {
@@ -358,8 +421,8 @@ li {
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
+  height: 23px;
+  width: 23px;
   left: 4px;
   bottom: 4px;
   background-color: white;
@@ -391,11 +454,7 @@ input:checked+.slider:before {
 }
 
 .button-section {
-  width: 40%;
-}
-
-.form-switch1 {
-  margin-right: 5rem;
+  width: 441px !important;
 }
 
 .h2 {
@@ -495,6 +554,11 @@ input:checked+.slider:before {
 
   .table {
     overflow-x: visible
+  }
+
+  .button-section {
+    flex-direction: row !important;
+    width: 100% !important;
   }
 
   .mobile-svg {
@@ -668,10 +732,10 @@ input:checked+.slider:before {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 13px 24px;
+  padding: 8px 24px !important;
   gap: 10px;
-  left: 1rem;
-  bottom: 1rem;
+  left: 2rem;
+  bottom: 2rem;
   border-radius: 5px;
   border: none;
   background: rgba(255, 255, 255, 0.15);
@@ -688,6 +752,10 @@ input:checked+.slider:before {
   border-radius: 10px;
 
 } */
+footer {
+  border: 1px solid #EAEAEA !important;
+
+}
 
 @media (max-width:768px) {
   body {
