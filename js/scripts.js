@@ -56,6 +56,7 @@ chk.addEventListener('change', ($event) => {
         heroImg.forEach(el => el.classList.add('opacity-75'))
         border.classList.add('footer-dark');
         border.classList.remove('footer-light')
+     
         navbarToggler.classList.add('text-white');
         borderColor.forEach(el => {
             el.classList.remove('border-gray')
@@ -73,7 +74,7 @@ chk.addEventListener('change', ($event) => {
             item.setAttribute('src', "assets/logo-dark.svg")
         })
         heroImg.forEach(el => el.classList.remove('opacity-75'))
-        border.classList.add('border-dark')
+        
     }
     if (isChecked) {
         label.classList.add('label-color');
