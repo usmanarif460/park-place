@@ -11,13 +11,6 @@ body {
   overflow-x: hidden;
 }
 
-.table {
-  overflow-x: visible
-}
-
-
-
-
 #navitems {
   margin-left: 2rem !important;
 }
@@ -44,6 +37,10 @@ body {
   letter-spacing: -0.03em;
   color: #797979;
   font-style: normal;
+}
+
+.footer-dark {
+  border-top: 1px solid #292929;
 }
 
 /* Dark Mode code herre */
@@ -543,8 +540,8 @@ input:checked+.slider:before {
     overflow-x: hidden;
   }
 
-  .table {
-    overflow-x: visible
+  .table-circles {
+    display: none !important;
   }
 
   .button-section {
@@ -748,18 +745,14 @@ input:checked+.slider:before {
   border-radius: 10px;
 
 } */
-#footer {
-  border: 1px solid #EAEAEA !important;
+.footer-light {
+  border-top: 1px solid #EAEAEA !important;
 
 }
 
 @media (max-width:768px) {
   body {
     overflow-x: hidden;
-  }
-
-  .table {
-    overflow-x: visible
   }
 
   .mobile-svg {

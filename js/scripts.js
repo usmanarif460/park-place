@@ -35,7 +35,7 @@ const mobileSvg = document.getElementById('mobile');
 const moon = document.querySelector('.bi-moon');
 const sun = document.querySelector('.bi-sun');
 const label = document.querySelector('.label')
-const toggle=document.querySelector('.toggle')
+const toggle = document.querySelector('.toggle')
 const logo = document.querySelectorAll('.logo')
 const heroImg = document.querySelectorAll('.hero-img');
 const border = document.querySelector('#footer');
@@ -49,17 +49,21 @@ chk.addEventListener('change', ($event) => {
         bgBlack.classList.remove('bg-black')
         bgBlack.classList.add('bg-gray-100')
         mobileSvg.setAttribute('src', "assets/mobile-dark.svg")
+
         logo.forEach(item => {
             item.setAttribute('src', "assets/logo-light.svg")
         })
         heroImg.forEach(el => el.classList.add('opacity-75'))
-        border.classList.add('border-light');
+        border.classList.add('footer-dark');
+        border.classList.remove('footer-light')
         navbarToggler.classList.add('text-white');
         borderColor.forEach(el => {
             el.classList.remove('border-gray')
-        el.classList.add('border-custom')}
-        );
+            el.classList.add('border-custom')
+        });
     } else {
+        border.classList.add('footer-light')
+        border.classList.remove('footer-dark')
         bgBlack.classList.add('bg-black')
         bgBlack.classList.remove('bg-gray-100')
         navbarToggler.classList.add('text-dark')
@@ -68,35 +72,22 @@ chk.addEventListener('change', ($event) => {
         logo.forEach(item => {
             item.setAttribute('src', "assets/logo-dark.svg")
         })
-        heroImg.forEach(el=>el.classList.remove('opacity-75'))
-    border.classList.add('border-dark')
+        heroImg.forEach(el => el.classList.remove('opacity-75'))
+        border.classList.add('border-dark')
     }
     if (isChecked) {
         label.classList.add('label-color');
         label.classList.remove('color-before');
         moon.classList.remove('d-none');
         sun.classList.add('d-none');
-        
-    }
-    else {
+
+    } else {
         console.log('no hello');
         label.classList.add('color-before')
         label.classList.remove('label-color')
         sun.classList.remove('d-none')
         moon.classList.add('d-none')
     }
-    
-    // const masthead = document.getElementById('masthead')
-    // if (masthead.classList.contains('bg-white')) {
-    //     masthead.classList.remove('bg-white');
-    //     masthead.classList.add("bg-dark")
-    //     masthead.classList.add('text-white')
-    // }
-    // else if(masthead.classList.contains('bg-dark')){
-    //     masthead.classList.remove('bg-dark');
-    //     masthead.classList.add('bg-white')
-    //     masthead.classList.remove('text-white')
-    // }
     bgLight.forEach(el => {
         if (el.classList.contains('bg-light')) {
             el.classList.remove('bg-light');
@@ -148,23 +139,8 @@ chk.addEventListener('change', ($event) => {
     } else {
         document.body.classList.remove('bg-dark');
         document.body.classList.add('bg-white');
-        
+
     }
 
 
 });
-// overLay on hover
-// const overLay = document.querySelectorAll('#hero-container');
-// const button = document.querySelectorAll("#property-button");
-// const spanOverlay=document.querySelectorAll('#overlay')
-// const overlayFunction=() => {
-//     overLay.forEach(el=>el.classList.add('overlay-container'));
-//     button.forEach(el=>el.classList.remove('d-none'))
-//     spanOverlay.forEach(el=>el.classList.add('overlay'))
-
-// }
-
-// overLay.forEach(el =>el.addEventListener('mouseenter',overlayFunction ))
-// overLay.forEach(el=>el.addEventListener('mouseleave', () => {
-//     button.forEach(el => el.classList.add('d-none'))
-// }))
